@@ -15,4 +15,5 @@ VOLUME ["$P4PCACHE"]
 
 EXPOSE 1666
 
-CMD ["/usr/bin/p4p TRUST -Y"]
+CMD ["/usr/bin/p4p -Gc"]
+CMD ["/usr/bin/p4p"]
