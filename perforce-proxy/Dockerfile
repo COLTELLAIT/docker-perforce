@@ -14,4 +14,8 @@ VOLUME ["$P4PCACHE"]
 
 EXPOSE 1666
 
+CMD ["mkdir sslkeys"]
+CMD ["chmod 700 sslkeys"]
+CMD ["/usr/bin/p4p -Gc"]
+CMD ["/usr/bin/p4p -Gf"]
 CMD ["/usr/bin/p4p"]
