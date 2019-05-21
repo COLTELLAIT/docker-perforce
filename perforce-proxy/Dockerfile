@@ -9,6 +9,7 @@ RUN curl -sSL -O http://cdist2.perforce.com/perforce/r${P4_VERSION}/bin.linux26x
 ENV P4TARGET perforce:1666
 ENV P4PORT 1666
 ENV P4PCACHE /cache
+ENV P4SSLDIR /
 
 VOLUME ["$P4PCACHE"]
 
